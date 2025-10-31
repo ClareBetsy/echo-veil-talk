@@ -16,7 +16,7 @@ const App = () => (
   <WagmiProvider config={config}>
     <QueryClientProvider client={queryClient}>
       {/* Ensure RainbowKit initializes on Hardhat (31337) */}
-      <RainbowKitProvider initialChain={1}>
+      <RainbowKitProvider initialChain={31337}>
         <TooltipProvider>
           <Toaster />
           <Sonner />
