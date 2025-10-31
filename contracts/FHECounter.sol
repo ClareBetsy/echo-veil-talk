@@ -22,7 +22,7 @@ contract FHECounter is SepoliaConfig {
     /// @dev This example omits overflow/underflow checks for simplicity and readability.
     /// In a production contract, proper range checks should be implemented.
     function increment(bytes calldata encryptedDelta) external {
-        require(encryptedDelta.length > 0, "FHECoutner: empty input");
+        require(encryptedDelta.length > 0, "FHECounter: empty input");
         
         // Convert bytes to euint32
         euint32 encryptedValue = FHE.asEuint32(encryptedDelta);
@@ -39,7 +39,7 @@ contract FHECounter is SepoliaConfig {
     /// @dev This example omits overflow/underflow checks for simplicity and readability.
     /// In a production contract, proper range checks should be implemented.
     function decrement(bytes calldata encryptedDelta) external {
-        require(encryptedDelta.length > 0, "FHECoutner: empty input");
+        require(encryptedDelta.length > 0, "FHECounter: empty input");
         
         // Convert bytes to euint32
         euint32 encryptedValue = FHE.asEuint32(encryptedDelta);
