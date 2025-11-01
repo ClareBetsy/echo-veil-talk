@@ -52,5 +52,7 @@ contract EchoVeilTalk is SepoliaConfig {
 
         FHE.allowThis(_count);
         FHE.allow(_count, msg.sender);
+        
+        emit DecrementPerformed(msg.sender, block.timestamp);
     }
 }
