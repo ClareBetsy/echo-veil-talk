@@ -40,6 +40,7 @@ const ContractPanel = () => {
                 toast.success("Submitted encrypted increment", { description: tx });
                 setLastTx(tx);
                 setLastErr(null);
+                await refetch();
               } catch (err: unknown) {
                 const message = err instanceof Error ? err.message : String(err);
                 toast.error("Failed to submit", { description: message });
