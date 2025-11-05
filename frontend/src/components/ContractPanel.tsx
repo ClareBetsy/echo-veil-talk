@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useMemo, useState, useCallback } from "react";
 import { useAccount, useChainId, useReadContract } from "wagmi";
 import { FHECOUNTER_ABI, getFheCounterAddress } from "@/lib/contracts";
 import { sendEncryptedDelta } from "@/lib/fheClient";
