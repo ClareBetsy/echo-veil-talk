@@ -24,6 +24,7 @@ contract EchoVeilTalk is SepoliaConfig {
     /// @param encryptedDelta the encrypted delta value as bytes
     /// @dev This example omits overflow/underflow checks for simplicity and readability.
     /// In a production contract, proper range checks should be implemented.
+    /// Emits IncrementPerformed event on successful operation.
     function increment(bytes calldata encryptedDelta) external {
         require(encryptedDelta.length > 0, "EchoVeilTalk: empty input");
         
