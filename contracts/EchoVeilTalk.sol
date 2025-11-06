@@ -4,9 +4,9 @@ pragma solidity ^0.8.24;
 import {FHE, euint32} from "@fhevm/solidity/lib/FHE.sol";
 import {SepoliaConfig} from "@fhevm/solidity/config/ZamaConfig.sol";
 
-/// @title EchoVeilTalk - A FHE-based encrypted counter contract
+/// @title EchoVeilTalk - A FHE-based encrypted chat analytics contract
 /// @author echo-veil-talk
-/// @notice A contract demonstrating fully homomorphic encryption operations for encrypted chat analytics
+/// @notice A contract demonstrating fully homomorphic encryption operations for encrypted chat analytics and counter functionality
 contract EchoVeilTalk is SepoliaConfig {
     uint256 public totalOperations;
     euint32 private _count;
