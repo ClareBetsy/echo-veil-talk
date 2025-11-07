@@ -25,7 +25,7 @@ const ContractPanel = () => {
         <div>
           <h3 className="text-sm font-semibold text-foreground">FHE Counter</h3>
           <p className="text-xs text-muted-foreground">
-            Network: {chainId === 31337 ? "Localhost" : chainId === 11155111 ? "Sepolia" : chainId ?? "N/A"} · Address: {contractAddress ?? "Not configured"}
+            Network: {chainId === 31337 ? "Localhost" : chainId === 11155111 ? "Sepolia Testnet" : chainId ?? "N/A"} · Address: {contractAddress ?? "Not configured"}
           </p>
         </div>
         <div className="flex items-center gap-2">
