@@ -14,8 +14,8 @@ contract EchoVeilTalk is SepoliaConfig {
     event IncrementPerformed(address indexed user, uint256 timestamp);
     event DecrementPerformed(address indexed user, uint256 timestamp);
 
-    /// @notice Returns the current count
-    /// @return The current encrypted count as bytes32
+    /// @notice Returns the current encrypted count value
+    /// @return The current encrypted count as bytes32 for FHE operations
     function getCount() external view returns (bytes32) {
         return FHE.serialize(_count);
     }
