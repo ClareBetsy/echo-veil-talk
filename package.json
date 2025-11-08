@@ -82,7 +82,8 @@
     "node": "cross-env HARDHAT_DISABLE_EDR=1 hardhat node",
     "deploy:localhost": "cross-env HARDHAT_DISABLE_EDR=1 hardhat deploy --network localhost && node ./scripts/update-frontend-env.js",
     "deploy:sepolia": "cross-env HARDHAT_DISABLE_EDR=1 hardhat deploy --network sepolia && node ./scripts/update-frontend-env.js",
-    "update-frontend-env": "node ./scripts/update-frontend-env.js"
+    "update-frontend-env": "node ./scripts/update-frontend-env.js",
+    "verify:sepolia": "cross-env HARDHAT_DISABLE_EDR=1 hardhat verify --network sepolia"
   },
   "overrides": {
     "ws@>=7.0.0 <7.5.10": ">=7.5.10",
