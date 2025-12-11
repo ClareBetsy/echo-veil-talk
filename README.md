@@ -6,7 +6,7 @@ A full-stack template for FHEVM that demonstrates a "homomorphic encrypted chat 
 
 ## Demo
 
-- Live demo: https://echo-veil-talk.vercel.app/
+- Live demo: https://echo-veil-talk-mcb.vercel.app/
 - Demo video: [watch](./video.mp4)
 
 <video src="./video.mp4" controls width="720"></video>
